@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-label="PutLegalHeaders terminal run mockup">
+  <defs>
+    <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b0f0c"/>
+      <stop offset="1" stop-color="#05080b"/>
+    </linearGradient>
+    <linearGradient id="titlebar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#161b19"/>
+      <stop offset="1" stop-color="#0d1210"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="560" fill="url(#desk)"/>
+
+  <!-- terminal window -->
+  <rect x="64" y="120" width="832" height="372" rx="12" fill="url(#titlebar)" stroke="#2a322d"/>
+  <circle cx="92" cy="146" r="7" fill="#f87171"/>
+  <circle cx="114" cy="146" r="7" fill="#fbbf24"/>
+  <circle cx="136" cy="146" r="7" fill="#4ade80"/>
+  <text x="480" y="152" text-anchor="middle" font-family="monospace" font-size="13" fill="#8b949e">cmd.exe - C:\work&gt;java -jar PutLeagalHeadersAuto-1.0-jar-with-dependencies.jar</text>
+
+  <g font-family="monospace" font-size="15">
+    <text x="86" y="196" fill="#9ca3af">$ </text>
+    <text x="110" y="196" fill="#4ade80">java -jar PutLeagalHeadersAuto-1.0-jar-with-dependencies.jar</text>
+
+    <text x="86" y="230" fill="#d1d5db">Files WITHOUT the given text ( All rights reserved. ) in path C:\work\project are:</text>
+    <text x="86" y="260" fill="#7dd3fc">C:\work\project\src\main\java\model\Model.java</text>
+    <text x="86" y="282" fill="#7dd3fc">C:\work\project\src\main\java\controller\Controller.java</text>
+    <text x="86" y="304" fill="#7dd3fc">C:\work\project\src\main\java\controller\Functions.java</text>
+    <text x="86" y="326" fill="#7dd3fc">C:\work\project\src\main\webapp\WEB-INF\pages\index.jsp</text>
+    <text x="86" y="348" fill="#6b7280">··· 8 more files</text>
+
+    <text x="86" y="382" fill="#4ade80">Starting adding Legal Headers...</text>
+    <text x="86" y="410" fill="#d1d5db">Done: C:\work\project\src\main\java\model\Model.java</text>
+    <text x="86" y="432" fill="#d1d5db">Done: C:\work\project\src\main\java\controller\Controller.java</text>
+    <text x="86" y="454" fill="#d1d5db">Done: C:\work\project\src\main\java\controller\Functions.java</text>
+    <text x="86" y="476" fill="#d1d5db">Done: C:\work\project\src\main\webapp\WEB-INF\pages\index.jsp</text>
+
+    <text x="86" y="504" fill="#fde047">Legal Headers are to 12 files added!</text>
+  </g>
+
+  <text x="480" y="528" text-anchor="middle" font-family="monospace" font-size="13" fill="#4b5563">↓ one command stamps 12 files with the legal header (mock run; Windows required)</text>
+</svg>

@@ -1,5 +1,5 @@
 {
-  "directoryPath":"C:\\Users\\chalepad\\Desktop\\AAA",
+  "directoryPath":"C:\\path\\to\\your\\source",
   "textToFind": "All rights reserved.",
   "suffix":"*.java",
   "withOrWithoutText": "WITHOUT"
