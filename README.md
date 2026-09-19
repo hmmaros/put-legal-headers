@@ -3,30 +3,30 @@
 [![Build](https://github.com/hmmaros/put-legal-headers/actions/workflows/build.yml/badge.svg)](https://github.com/hmmaros/put-legal-headers/actions/workflows/build.yml)
 ![Java 8](https://img.shields.io/badge/Java-8-orange?logo=openjdk&logoColor=white)
 ![Maven](https://img.shields.io/badge/build-Maven-C71A36?logo=apachemaven&logoColor=white)
-![Status](https://img.shields.io/badge/status-legacy%20%C2%B7%20circa%202018-lightgrey)
+![Status](https://img.shields.io/badge/status-legacy%20%C2%B7%202018-lightgrey)
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
-> **LEGACY · CIRCA 2018** — Java 8 · Maven · json-simple · Windows
+> **LEGACY · 2018** — Java 8 · Maven · json-simple · Windows
 >
-> A small experiment from the author's early days, kept on GitHub for posterity.
-> It is not pretty. It is not cross-platform. It *was* the fastest way to make
-> the license auditor smile.
+> One of my early tools, kept on GitHub for posterity. It isn't pretty, it
+> isn't cross-platform, but it *was* the fastest way to make the license
+> auditor smile.
 
 ---
 
 ## The Story
 
-Back in 2018, every source file in the project had to ship with a copyright
-header. The boss had a checkbox. The reviewer had a ruler. Everyone had
-finger-memory of the header text — and nobody had the *time* to type it into
-a hundred files after a refactor.
+Back in 2018, every source file had to ship with a copyright header. The
+reviewer had a ruler; everyone had finger-memory of the header text — and
+nobody had the *time* to type it into a hundred files after a refactor.
 
-`PutLegalHeaders` was the answer: a dead-simple CLI that reads `.java` files
-(any suffix, really), finds the ones missing the magic line — *"All rights
-reserved."* — and stamps the header on top. Run once, done. The concept later
-(very later) grew a face in the sibling repo `put-legal-headers-with-ui`.
+I wrote `PutLegalHeaders` as the answer: a dead-simple CLI that scans `.java`
+files (any suffix, really), finds the ones missing the magic line — *"All
+rights reserved."* — and stamps the header on top. Run once, done. The idea
+later (much later) grew a face in the sibling repo `put-legal-headers-with-ui`.
 
-`cmd.exe` did the heavy lifting; `json-simple` read `.json`; and a whole
-`tempFile.txt` shuffle kept the original content safe. It worked. Almost always.
+`cmd.exe` did the heavy lifting; `json-simple` read `.json`; and a `tempFile.txt`
+shuffle kept the original content safe. It worked — almost always.
 
 ---
 
@@ -75,7 +75,7 @@ java -jar target/PutLeagalHeadersAuto-1.0-jar-with-dependencies.jar
 ## Retrospective: what I'd build differently today
 
 - **No more `cmd.exe`.** A `java.nio.file.Files.walk` scan is portable,
-  sandboxed, and literally a day of the author's youth, bought back.
+  sandboxed, and literally a day of my youth, given back.
 - **No more temp-file shuffle.** Write in memory: read → prepend → write.
 - **A `--dry-run` flag.** Preview the matched list before touching anything.
 - **Jackson instead of `json-simple`** (or simply a few CLI args).
@@ -190,7 +190,11 @@ Three small experiments from the same era, kept for posterity:
 ## Disclaimer
 
 This tool **deletes and rewrites file contents** to insert headers. Only point
-it at files you intend to modify, and test on a copy first. The author is not
-responsible for data loss caused by running it.
+it at files you intend to modify, and test on a copy first. I'm not responsible
+for data loss caused by running it.
 
-*No explicit license — ask the author (`DC`) before reusing the code.*
+---
+
+## License
+
+Released under the [MIT License](LICENSE) © 2018 hmmaros.

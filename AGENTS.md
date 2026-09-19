@@ -55,11 +55,6 @@ Hard rules contributors must follow:
 - `assets/header.svg` and `assets/mockup.svg` are README showcase graphics.
   Keep them in sync with the README; do not remove without updating it.
 
-## Assets
-
-- `assets/header.svg` and `assets/mockup.svg` are README showcase graphics.
-  Keep them in sync with the README; do not remove without updating it.
-
 ## How to run
 
 ```bash
