@@ -72,7 +72,7 @@ java -jar target/PutLeagalHeadersAuto-1.0-jar-with-dependencies.jar
 
 ## Workflow
 
-- Work on `master` with small, clearly-messaged commits.
+- Work on `main` with small, clearly-messaged commits.
 - When asked to "optimize/update", prefer behavior-preserving refactors and
   confirm before touching the file-modification logic.
 - Update `README.md` and `AGENTS.md` whenever structure or conventions change.
